@@ -2,6 +2,8 @@
 import { useState } from "react";
 import { Box, Tab, Tabs, Typography, Grid, Paper } from "@mui/material";
 import Admin from "./pages/Admin";
+import User from "./pages/User";
+
 export default function Home() {
   const [tabValue, setTabValue] = useState(0);
 
@@ -38,8 +40,6 @@ const UserView = () => (
     <Typography variant="h5" gutterBottom>
       User Dashboard
     </Typography>
-    <Typography>
-      Welcome to the user view. Explore your content here.
-    </Typography>
+    <User> </User>
   </Paper>
 );
